@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jlicuyT7.Views.vEstudiante"
+             Title="vEstudiante">
+    <VerticalStackLayout>
+        <Label 
+            Text="Consumo de REST API"
+            VerticalOptions="Center" 
+            FontSize="24"
+            HorizontalTextAlignment="Center" />
+
+        <ScrollView>
+            <Grid Padding="20"
+                  x:Name="gridEstudiantes" 
+                  RowDefinitions="Auto"
+                  ColumnDefinitions="*,*,*,*"
+                  RowSpacing="10"
+                  ColumnSpacing="10">
+                <!-- Columna encabezado -->
+                <Label Grid.Row="0" Grid.Column="0" Text="Código" FontAttributes="Bold"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Nombre" FontAttributes="Bold"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Apellido" FontAttributes="Bold"/>
+                <Label Grid.Row="0" Grid.Column="3" Text="Edad" FontAttributes="Bold"/>
+            </Grid>
+        </ScrollView>
+
+        <Button x:Name="btnAgregar"
+                Text="Agregar Estudiante"
+                Clicked="btnAgregar_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

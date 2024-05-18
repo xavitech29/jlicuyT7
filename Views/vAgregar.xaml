@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jlicuyT7.Views.vAgregar"
+             Title="vAgregar">
+    <StackLayout Padding="20" Spacing="15">
+        <Label Text="Nombre" />
+        <Entry x:Name="txtNombre" Placeholder="Ingresa tu nombre" />
+
+        <Label Text="Apellido" />
+        <Entry x:Name="txtApellido" Placeholder="Ingresa tu apellido" />
+
+        <Label Text="Edad" />
+        <Entry x:Name="txtEdad" Placeholder="Ingresa tu edad" Keyboard="Numeric" MaxLength="3" />
+
+        <Button x:Name="btnGuardar" Text="Guardar Estudiante"
+                Clicked="btnGuardar_Clicked" />
+    </StackLayout>
+</ContentPage>
